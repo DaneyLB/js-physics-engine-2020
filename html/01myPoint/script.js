@@ -8,12 +8,12 @@ canvas.width = width;
 canvas.height = height;
 
 // begin hier met jouw code voor deze opdracht
+let myCircle = new Point(getRandomInt(0,width),getRandomInt(0,height),getRandomInt(20,60),RandomColorGet());
 
-let myPoint = new Point(500,200,20,"red");
-myPoint.draw(context);
+function RandomCircleMaker() {
+	myCircle.draw();
+	myCircle.update(getRandomInt(0,width),getRandomInt(0,height),getRandomInt(20,60),RandomColorGet());
+}
 
-let myPoint2 = new Point(100,100,40,"green");
-myPoint2.draw(context);
 
-let myPoint3 = new Point(200,400,80,"blue");
-myPoint3.draw(context);
+setInterval(RandomCircleMaker,100);
