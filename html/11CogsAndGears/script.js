@@ -22,7 +22,7 @@ img3.src = "images/cog.png";
 
 angle = 0.1;
 angle2 = -0.1;
-angle3 = -0.1;
+angle3 = 0.1;
 
 
 img.addEventListener('load',()=>{
